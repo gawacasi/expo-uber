@@ -31,7 +31,6 @@ ModalHeader.defaultProps = {
 };
 
 ModalHeader.propTypes = {
-  // optional
   style: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.number,

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Animated, Modal, StyleSheet, View } from 'react-native';
 import { colors, device } from '../constants';
 
-// components
 import ModalBackdrop from './ModalBackdrop';
 import RideTypeItem from './RideTypeItem';
 

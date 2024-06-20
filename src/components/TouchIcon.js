@@ -19,11 +19,9 @@ TouchIcon.defaultProps = {
 };
 
 TouchIcon.propTypes = {
-  // required
   icon: PropTypes.element.isRequired,
   onPress: PropTypes.func.isRequired,
 
-  // optional
   iconSize: PropTypes.number,
   style: PropTypes.oneOfType([
     PropTypes.array,

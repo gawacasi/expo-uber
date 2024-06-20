@@ -12,15 +12,14 @@ const App = () => {
   React.useEffect(() => {
     async function prepare() {
       try {
-        // keeps the splash screen visible while assets are cached
+
         await SplashScreen.preventAutoHideAsync();
 
-        // pre-load/cache assets: images, fonts, and videos
         await func.loadAssetsAsync();
       } catch (e) {
-        // console.warn(e);
+
       } finally {
-        // loading is complete
+
         setIsLoading(false);
       }
     }
@@ -29,12 +28,11 @@ const App = () => {
   }, []);
 
   React.useEffect(() => {
-    // when loading is complete
+
     if (isLoading === false) {
-      // hide splash function
+
       const hideSplash = async () => SplashScreen.hideAsync();
 
-      // hide splash screen to show app
       hideSplash();
     }
   }, [isLoading]);

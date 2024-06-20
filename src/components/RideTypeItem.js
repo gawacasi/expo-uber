@@ -15,7 +15,6 @@ const RideTypeItem = ({ image, onPress, text }) => (
 );
 
 RideTypeItem.propTypes = {
-  // required
   image: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired

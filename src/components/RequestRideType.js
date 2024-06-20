@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { colors, fonts, gStyle, images } from '../constants';
 
-// icons
 import SvgChevronDown from './icons/Svg.ChevronDown';
 
 const RequestRideType = ({ image, onPress, text }) => (
@@ -21,7 +20,6 @@ const RequestRideType = ({ image, onPress, text }) => (
 );
 
 RequestRideType.propTypes = {
-  // required
   image: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired
